@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import CarBrand from "../views/CarBrand.vue";
+import AddCarBrand from "../views/AddCarBrand.vue"
 
 Vue.use(VueRouter);
 
@@ -21,7 +22,12 @@ const routes = [
     path: "/carBrands",
     name: "CarBrands",
     component: CarBrand
-  }
+  },
+  {
+    path: "/addCarBrand",
+    name: "AddCarBrand",
+    component: AddCarBrand
+  },
 ];
 
 const router = new VueRouter({
